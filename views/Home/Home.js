@@ -1,41 +1,65 @@
-import { Button, Heading, Text } from '@chakra-ui/react'
+import {Heading, Text, Link } from '@chakra-ui/react'
 import Image from 'next/image'
-import { CustomHead } from '../../components/head'
 import styles from '../../styles/Home.module.scss'
+import { motion } from 'framer-motion'
+import { animationVariants } from '../../constants/Animations/simpleVariants';
+
+const MotionHeading = motion(Heading);
+const MotionLink = motion(Link);
 
 export default function Home() {
   return (
     <div className={styles.container}>
-        <CustomHead title="page title" />
       <main className={styles.main}>
-        <Heading className={styles.title} color="brand.900">
+        <MotionHeading
+          initial={'hidden'}
+          animate={'visible'}
+          variants={animationVariants}
+          className={styles.title} 
+          color="brand.900">
           <a href="https://nextjs.org">Next.js!</a>
-        </Heading>
+        </MotionHeading>
 
         <Text className={styles.description}>
           Boilerplate with Chakra UI - SASS
         </Text>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <MotionLink
+            initial={'hidden'}
+            animate={'visible'}
+            variants={animationVariants}
+            href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          </MotionLink>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <MotionLink
+            initial={'hidden'}
+            animate={'visibleExtraDelay'}
+            variants={animationVariants}
+            href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          </MotionLink>
 
-          <a
+          <MotionLink
+            initial={'hidden'}
+            animate={'visibleExtraDelay2'}
+            variants={animationVariants}
+
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          </MotionLink>
 
-          <a
+          <MotionLink
+            initial={'hidden'}
+            animate={'visibleExtraDelay3'}
+            variants={animationVariants}
+
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
@@ -43,7 +67,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </MotionLink>
         </div>
       </main>
 
