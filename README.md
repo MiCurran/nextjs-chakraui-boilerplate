@@ -17,3 +17,23 @@ This repository also contains a script to create components. Just use:
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+## Including Animations  
+`./constants/Animations/simpleVariants.js`  
+  
+### Import and use them like so
+  
+ ```  
+   import {simpleVariants}  
+   import {motion} from 'framer/motion';  
+   import {Heading} from '@chakra-ui/react';  
+   const MotionHeading = motion(Heading);  
+     
+   <MotionHeading  
+    initial={'hidden'}  
+    animate={'visible'}  
+    variants={simpleVariants}  
+   >  
+      I'm an animated Heading  
+   </Heading>
+ ```
