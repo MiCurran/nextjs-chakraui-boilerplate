@@ -1,6 +1,6 @@
 import {Heading, Text, Link } from '@chakra-ui/react'
 import Image from 'next/image'
-import styles from '../../styles/Home.module.scss'
+import styles from './/Home.module.css'
 import { motion } from 'framer-motion'
 import { animationVariants } from '../../constants/Animations/simpleVariants';
 
