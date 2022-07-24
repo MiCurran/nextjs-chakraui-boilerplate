@@ -33,14 +33,13 @@ Hello! Here is your requested shades using 000000 as reference:
 }
 ```
 
-
 ## Including Animations  
-`./constants/Animations/simpleVariants.js`  
+`./constants/Animations/simpleVariants.ts`  
   
 ### Import and use them like so
   
  ```  
-   import {simpleVariants}  
+   import { animationVariants } from '@/animations/simpleVariants';  
    import {motion} from 'framer/motion';  
    import {Heading} from '@chakra-ui/react';  
    const MotionHeading = motion(Heading);  
@@ -48,7 +47,7 @@ Hello! Here is your requested shades using 000000 as reference:
    <MotionHeading  
     initial={'hidden'}  
     animate={'visible'}  
-    variants={simpleVariants}  
+    variants={animationVariants}  
    >  
       I'm an animated Heading  
    </Heading>
