@@ -6,7 +6,7 @@
       "@/hooks/*": ["hooks/*"],
       "@/types/*": ["types/*"],
       "@/views/*": ["views/*"],
-      "@/constants/*": ["constants/*"]
+      "@/Animations/*": ["constants/Animations/*"]
     },
     "target": "es5",
     "lib": [
@@ -31,7 +31,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "hooks/useFetch.ts", "next.config.js"  ],
+, "hooks/useFetch.ts"  ],
   "exclude": [
     "node_modules"
   ]
