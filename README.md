@@ -39,7 +39,7 @@ Hello! Here is your requested shades using 000000 as reference:
 ### Import and use them like so
   
  ```  
-   import { animationVariants } from '@/animations/simpleVariants';  
+   import { animationVariants } from '@/Animations/simpleVariants';  
    import {motion} from 'framer/motion';  
    import {Heading} from '@chakra-ui/react';  
    const MotionHeading = motion(Heading);  
