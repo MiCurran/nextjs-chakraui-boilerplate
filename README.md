@@ -34,12 +34,12 @@ Hello! Here is your requested shades using 000000 as reference:
 ```
 
 ## Including Animations  
-`./constants/Animations/simpleVariants.ts`  
+`theme/Animations/simpleVariants`  
   
 ### Import and use them like so
   
  ```  
-   import { animationVariants } from '@/Animations/simpleVariants';  
+   import { animationVariants } from 'theme/Animations/simpleVariants';  
    import {motion} from 'framer/motion';  
    import {Heading} from '@chakra-ui/react';  
    const MotionHeading = motion(Heading);  
