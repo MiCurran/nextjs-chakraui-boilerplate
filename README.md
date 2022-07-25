@@ -13,7 +13,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Creating Color Shades for ChakraUI Theme 🎨
-`npm run get_shades --color 00000`  
+`npm run get_shades 00000`  
 
 ```
 Theme Color Shades 0.1.8

@@ -1,5 +1,6 @@
 {
   "name": "nextjs-chakra-boilerplate",
+  "author": "MiCurran",
   "version": "0.2.0",
   "private": true,
   "scripts": {
@@ -7,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "get_shades": "npx theme-color-shades $npm_config_color"
+    "get_shades": "npx theme-color-shades"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.6",
