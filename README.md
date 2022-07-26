@@ -1,8 +1,19 @@
 This is a [Next.js](https://nextjs.org/) + [Chakra UI](https://chakra-ui.com/docs/) Typescript project bootstrapped with [`nextjs-chakra-boilerplate`](https://github.com/MiCurran/nextjs-chakra-boilerplate).
 
-## Getting Started
+## Getting Started  
 
-First, run the development server:
+#### One Click Deploy with Vercel  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FMiCurran%2Fnextjs-chakra-boilerplate)
+
+#### Or  
+
+First install dependencies:  
+```bash  
+npm install
+# or
+yarn install
+```
+Then, run the development server:
 
 ```bash
 npm run dev
