@@ -52,8 +52,11 @@ Hello! Here is your requested shades using 000000 as reference:
       I'm an animated Heading  
    </Heading>
  ```
-This repository also contains a script to create components. Just use:  
+This repository also contains a script to create components  
 
 ```bash
 ./createComponent.sh -a ComponentName
 ```
+
+## Run Jest Tests  
+`npm test`

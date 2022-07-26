@@ -1,4 +1,4 @@
-import { NextSeo } from 'next-seo';
+import {NextSeo} from 'next-seo';
 
 type CustomHeadProps = {
     title: string,
